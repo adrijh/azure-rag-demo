@@ -1,0 +1,17 @@
+import os
+
+TRANSCRIPTION_MODEL = "whisper-1"
+EMBEDDING_MODEL = "text-embedding-ada-002"
+RERANKING_MODEL = "gpt-3.5-turbo-0125"
+QUERY_EXPANSION_MODEL = "gpt-3.5-turbo-0125"
+CHAT_MODEL = "gpt-3.5-turbo-0125"
+DIARIZATION_MODEL = "pyannote/speaker-diarization-3.1"
+
+OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
+HUGGINGFACE_TOKEN = os.environ["HUGGINGFACE_TOKEN"]
+COHERE_API_KEY = os.environ["COHERE_API_KEY"]
+TORCH_DEVICE = os.environ["TORCH_DEVICE"]
+
+AZURE_SEARCH_ENDPOINT = os.environ["AZURE_SEARCH_ENDPOINT"]
+AZURE_SEARCH_KEY = os.environ["AZURE_SEARCH_KEY"]
+AZURE_SEARCH_INDEX_NAME = os.environ["AZURE_SEARCH_INDEX_NAME"]
